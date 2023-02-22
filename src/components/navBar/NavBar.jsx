@@ -7,7 +7,6 @@ import "./styles.scss";
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [focus, SetFocus] = useState(false);
 
   const showHideMenu = () => {
     setShowMenu(!showMenu);
