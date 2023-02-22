@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import "./styles.scss";
 
 const Technology = () => {
-  return (
-    <div>Technology</div>
-  )
-}
+  useEffect(() => {}, []);
 
-export default Technology
+  return <section className="SecTech"></section>;
+};
+
+export default Technology;
