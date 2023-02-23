@@ -1,0 +1,57 @@
+@import "../../../vars.scss";
+.SecButtonsTech {
+  display: flex;
+  gap: 10px;
+}
+.btnInfoTech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: $white;
+  width: 40px;
+  height: 40px;
+  border: 1px solid $white;
+  border-radius: 40px;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-size: 16px;
+  transition: 0.5s;
+  cursor: pointer;
+  &:hover {
+    background-color: $white;
+    color: $main-color;
+    transition: 0.5s;
+  }
+}
+
+.activeBtn {
+  background-color: $white;
+  transition: 0.5s;
+  color: $main-color;
+  &:hover {
+    background-color: $main-color;
+    color: $white;
+    transition: 0.5s;
+  }
+}
+
+@media (min-width: 768px) {
+  .btnInfoTech {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .btnInfoTech {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+  }
+  .SecButtonsTech {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
