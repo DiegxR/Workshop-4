@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500&family=Barlow:wght@200&family=Bellefair&family=Epilogue:wght@500;700&family=Roboto:wght@300;400;500&display=swap");
+@import "../../vars.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("../../assets/crew/background-crew-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white;
+  font-family: "Bellefair", serif;
+}
+
+section {
+  margin-top: 150px;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  .meetText {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    span {
+      color: $hover;
+      font-weight: 600;
+    }
+  }
+
+  .Carrucel {
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &_btn {
+      border: none;
+      height: 10px;
+      width: 10px;
+      cursor: pointer;
+      border-radius: 20px;
+      background-color: $hover;
+    }
+    &_btn:hover {
+      background-color: $white;
+    }
+  }
+}
+.rol {
+  text-transform: uppercase;
+  color: $hover;
+  font-size: 20px;
+}
+
+.name {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.bio {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: "Barlow", sans-serif;
+}
+
+.infoCrew {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.crewImg {
+  height: 220px;
+  width: 90%;
+  border-bottom: 1px solid $hover;
+}
+
+.infoCrew_p {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Douglas {
+  @extend .crewImg;
+  background: url("../../assets/crew/image-douglas-hurley.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.Mark {
+  @extend .crewImg;
+  background: url("../../assets/crew/image-mark-shuttleworth.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.Victor {
+  @extend .crewImg;
+  background: url("../../assets/crew/image-victor-glover.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.Anousheh {
+  @extend .crewImg;
+  background: url("../../assets/crew/image-anousheh-ansari.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.infoCrew_text {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  body {
+    background: url("../../assets/crew/background-crew-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  .infoCrew {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .infoCrew_text {
+    flex-direction: column-reverse;
+  }
+  .crewImg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 420px;
+    width: 100%;
+    border-bottom: none;
+  }
+
+  .meetText {
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    background: url("../../assets/crew/background-crew-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  .infoCrew {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .infoCrew_text {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    text-align: start;
+  }
+  .Carrucel {
+    margin-top: 100px;
+    margin-bottom: -50px;
+    margin-left: -470px;
+  }
+  .crewImg {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 450px;
+    border-bottom: none;
+  }
+  .infoCrew_p {
+    gap: 20px;
+  }
+
+  .name {
+    font-size: 40px;
+  }
+
+  .bio {
+    font-size: 20px;
+  }
+}
