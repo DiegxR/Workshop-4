@@ -33,7 +33,6 @@ const ImgPlace = ({src}) => {
   return (
     <div className='imgContainer'>
         <img src={Img}></img>
-
     </div>
   )
 }

@@ -6,29 +6,32 @@
         width: 80%;
     }
 }
-
+.Planet{
+    object-fit: cover;
+    width: 100%;
+    height: 100%
+}
 .Moon{
+    @extend .Planet;
     background: url('../../../assets/destination/image-moon.png');
     background-repeat: no-repeat;
     background-size: cover;
-    object-fit: cover;
-    
-    height: 50%;
+   
 }
 
 .Mars{
-    @extend .Moon;
+    @extend .Planet;
     background: url('../../../assets/destination/image-mars.png');
     background-repeat: no-repeat;
 }
 .Europa{
+    @extend .Planet;
     background: url('../../../assets/destination/image-europa.png');
     background-repeat: no-repeat;
     @extend .Moon;
 }
 .Titan{
+    @extend .Planet;
     background: url('../../../assets/destination/image-titan.png');
     background-repeat: no-repeat;
-    width: 400px;
-    height: 500px;
 }
