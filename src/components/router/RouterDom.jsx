@@ -12,7 +12,7 @@ const RouterDom = () => {
             <Route path="/" element={<App/>}>
                 <Route path='home' element={<Home/>}/>
                 <Route path="crew" element={<Crew/>}/>
-                <Route path="destinations" element={<Destinations/>}/>
+                <Route path="destinations/" element={<Destinations/>}/>
                 <Route path="technology" element={<Technology/>}/>
             </Route>
         </Routes>
